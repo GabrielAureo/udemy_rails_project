@@ -1,11 +1,11 @@
 <ul>
     <% @projects.each do |project| %>
-        <li style="list-style-type: none"> 
-            <h4>
+        <li> 
+            <p>
             <%= project.title %> 
-            </h4>
+            </p>
             <%= project.description %> 
-            <%= "| #{project.percent_complete}" if project.percent_complete %>
+            <%= "| #{project.percent_complete}%" if project.percent_complete %>
         </li>
         -
     <%end%>
